@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Прогноз лесных пожаров</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+    <header>
+        <img src="/static/img/min1.png">
+        <h1>Прогноз лесных пожаров</h1>
+    </header>
+
+    <main>
+        <section id="login">
+            <h2>Вход</h2>
+            <form method="post" action="/submitreg" id="loginForm">
+                <label for="username">Логин:</label>
+                <input type="text" id="username" name="username" required>
+
+                <label for="password">Пароль:</label>
+                <input type="password" id="password" name="password" required>
+
+                <label for="code">Код доступа:</label>
+                <input type="text" id="code" name="code" required>
+
+                <button type="submit">Войти</button>
+            </form>
+        </section>
+
+        <section id="prediction" style="display: none;">
+            <h2>Прогноз лесных пожаров</h2>
+            <form id="predictionForm">
+                <!-- Добавьте поля для ввода данных о погоде -->
+                <button type="submit">Получить прогноз</button>
+            </form>
+
+            <div id="map"></div>
+            <div id="results"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Министерство природных ресурсов и экологии </p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

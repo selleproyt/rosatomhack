@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Расчет затрат на окраску элементов</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+    <header>
+        <img align="left" width="300" src="/static/img/rosat.png">
+        <h1 align="right">Расчет затрат на окраску элементов</h1>
+    </header>
+    <section id="login" align="center">
+        <form method="POST" action="/submitone" enctype="multipart/form-data">
+            <label for="image">Загрузите изображение</label>
+            <input type="file" id="image" name="image">
+            <input placeholder="Площадь передней двери" class="inputtown" type="text" name="door">
+            <input placeholder="Ширина факела" class="inputtown" type="text" name="fakel">
+            <input placeholder="Вылет факела за границы" class="inputtown" type="text" name="vylet">
+            <input placeholder="Стоимость 1л ЛКМ" class="inputtown" type="text" name="cost">
+            <input type="submit" value="Submit"/>
+        </form>
+    </section>
+
+
+    <footer>
+        <p>&copy; 2024 ГК "Росатом"</p>
+    </footer>
+
+</body>
+</html>
+
+
+
+
